@@ -5,6 +5,7 @@
     --dark-bg: #2F303A;
     --white-color: #ffffff;
     --btn-bg: #F5F4FA;
+    --card-item: 4;
 }
 
 /* font-family: 'Raleway', sans-serif;
@@ -90,7 +91,7 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 94px;
+    margin-bottom: 50px;
 }
 
 .title {
@@ -104,6 +105,41 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.card-set-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / var(--card-item) - 30px);
+}
+
+.header-flex {
+    display: flex;
 }
 
 /* logo */
@@ -131,6 +167,18 @@ body {
 /* header */
 .site-nav {
     color: var(--title-text-color);
+    display: flex;
+}
+
+/* .site-nav li {
+    margin-right: 50px;
+}
+
+.site-nav li:last-child {
+    margin-right: 0px;
+} */
+.site-nav li:not(:last-child) {
+    margin-right: 50px;
 }
 
 .header-link {
@@ -155,8 +203,8 @@ body {
     color: var(--white-color);
     background-color: var(--dark-bg);
     text-align: center;
-    padding-top: 280px;
-    padding-bottom: 280px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     outline: 2px solid tomato;
 }
@@ -178,13 +226,18 @@ body {
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     padding-top: 94px;
 }
 
-.work-image {
+/*.work-image {
     padding-top: 50px;
     padding-bottom: 94px;
+} */
+
+.work {
+    padding-top: 0px;
+    --card-item: 3;
 }
 
 /* person */
@@ -196,6 +249,7 @@ body {
 
 .person-title {
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .person-text {}
@@ -203,6 +257,11 @@ body {
 .person {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.person-wraper {
+    padding: 30px;
+    text-align: center;
 }
 
 /* footer */

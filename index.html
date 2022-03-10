@@ -17,8 +17,8 @@
   </head>
   <body>
     <header>
-      <div class="container">
-      <nav>
+      <div class="container ">
+      <nav >
         <a href="./index.html" class="link logo"> Web<span class="logo-header">Studio</span></a>
         <ul class="site-nav list">
           <li><a href="./index.html" class="link header-link current">Студия</a></li>
@@ -38,37 +38,40 @@
     </header>
     <main>
       <section class="section-hero">
+        <div class="container">
         <h1 class="hero-title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
         <button class="button hero-btn" type="button">Заказать услугу</button>
+      </div>
       </section>
-      <section class="container">
-        <h2  hidden>Особености секции</h2>
-        <ul class="feature list">
-          <li>
+      <section class="section">
+        <div class="container">
+        <h2 class="visually-hidden">Особености секции</h2>
+        <ul class="card-set feature list">
+          <li class="card-set-item">
             <h3 class="title feature-title">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседненой работы по
               формироанию позиции.
             </p>
           </li>
-          <li>
+          <li class="card-set-item">
             <h3 class="title feature-title">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="card-set-item">
             <h3 class="title feature-title">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="card-set-item">
             <h3 class="title feature-title">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
@@ -76,11 +79,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="work container">
+      <section class="work section">
+        <div class="container">
         <h2 class="title section-title">Чем мы занимаемся</h2>
-        <ul class="work-list list">
-          <li class="work-item">
+        <ul class="card-set work-list list">
+          <li class="work-item card-set-item">
             <img class="work-image" 
               src="./images/pc.jpg"
               width="370"
@@ -88,7 +93,7 @@
               alt="Программирование"
             />
           </li>
-          <li class="work-item">
+          <li class="work-item card-set-item">
             <img class="work-image"
               src="./images/phone.jpg"
               width="370"
@@ -96,7 +101,7 @@
               alt="Анализ"
             />
           </li>
-          <li class="work-item">
+          <li class="work-item card-set-item">
             <img class="work-image"
               src="./images/tablet.jpg"
               width="370"
@@ -105,51 +110,61 @@
             />
           </li>
         </ul>
+      </div>
       </section>
-      <section class="person container">
+      <section class="person">
+        <div class="container">
         <h2 class="title section-title">Наша команда</h2>
-        <ul class="person-list list">
-          <li class="person-item">
+        <ul class="card-set person-list list">
+          <li class="person-item card-set-item">
             <img class="person-image"
               src="./images/img-3.jpg"
               width="270"
               height="260"
               alt="Демьянко"
             />
+            <div class="person-wraper">
             <h3 class="title person-title">Игорь Демьяненко</h3>
             <p class="person-text" lang="en">Product Designer</p>
+          </div>
           </li>
-          <li class="person-item">
+          <li class="person-item card-set-item">
             <img class="person-image"
               src="./images/img-2.jpg"
               width="270"
               height="260"
               alt="Репина"
             />
+            <div class="person-wraper">
             <h3 class="title person-title">Ольга Репина</h3>
             <p class="person-text" lang="en">Frontend Developer</p>
+            </div>
           </li>
-          <li class="person-item">
+          <li class="person-item card-set-item">
             <img class="person-image"
               src="./images/img-1.jpg"
               width="270"
               height="260"
               alt="Тарасов"
             />
+            <div class="person-wraper">
             <h3 class="title person-title">Николай Тарасов</h3>
             <p class="person-text" lang="en">Marketing</p>
+          </div>
           </li>
-          <li class="person-item">
+          <li class="person-item card-set-item">
             <img class="person-image"
               src="./images/img.jpg"
               width="270"
               height="260"
               alt="Ермаков"
             />
+            <div class="person-wraper">
             <h3 class="title person-title">Михаил Ермаков</h3>
             <p class="person-text" lang="en">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
