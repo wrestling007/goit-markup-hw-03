@@ -237,7 +237,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  outline: 2px solid tomato;
 }
 
 /* feature */
@@ -373,7 +372,7 @@ body {
   margin-left: 30px;
 }
 .portfolio-card-wraper {
-  padding-top: 20px;
+  padding: 20px 24px;
 }
 .portfolio-btm {
   display: flex;
