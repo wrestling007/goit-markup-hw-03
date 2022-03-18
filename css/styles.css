@@ -168,8 +168,8 @@ body {
 /* header */
 .header {
   padding-top: 24px;
-  padding-bottom: 24px;
-  border: 1px solid #ececec;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header-flex {
   display: flex;
@@ -183,10 +183,12 @@ body {
 .address-flex {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 .mail {
   margin-right: 50px;
+}
+.contact {
+  margin-left: auto;
 }
 
 .site-nav {
@@ -283,6 +285,7 @@ body {
 .person-wraper {
   padding: 30px;
   text-align: center;
+  background: #ffffff;
 }
 
 /* footer */
@@ -398,4 +401,5 @@ body {
 
 .portfolio-bgr {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
